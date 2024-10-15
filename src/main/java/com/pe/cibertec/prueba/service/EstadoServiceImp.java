@@ -19,24 +19,4 @@ public class EstadoServiceImp implements EstadoService {
     public List<Estado> listaTodos() {
         return repository.findAll();
     }
-
-    @Override
-    public Estado insertaActualizaEstado(Estado obj) {
-        return repository.save(obj);
-    }
-
-    @Override
-    public Optional<Estado> buscaEstado(int idEstado) {
-        return repository.findById(idEstado);
-    }
-
-    @Override
-    public List<Estado> listaPorNombre(String nombre) {
-        return repository.buscarEstadoPorNombre (nombre);
-    }
-
-    @Override
-    public Estado actualizarEstado(Estado estado) {
-        return repository.save(estado);
-    }
 }

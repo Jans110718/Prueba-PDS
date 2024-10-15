@@ -13,9 +13,7 @@ public interface SolicitudEspecialService {
 
 	    public abstract Optional<SolicitudEspecial> buscaSolicitudEspecial(int idSolicitudEspecial);
 
-	    public abstract List<SolicitudEspecial> listaPorNombreConductorLike(String filtro);
-
-	    public abstract List<SolicitudEspecial> listaPorEstado(int idEstado);
+	    public abstract List<SolicitudEspecial> listaPorEstado(int id_estado);
 
 	    public abstract List<SolicitudEspecial> listaSolicitudesEspecialesActivas();
 

@@ -13,13 +13,13 @@ public interface IncidenciaRepository extends JpaRepository<Incidencia, Integer>
     public List<Incidencia> listaPorPlacaVehiculoLike(String filtro);
 
     @Query("select i from Incidencia i where i.vehiculo.id_vehiculo = ?1")
-    public List<Incidencia> listaPorVehiculo(int idVehiculo);
+    public List<Incidencia> listaPorVehiculo(int id_vehiculo);
 
     @Query("select i from Incidencia i where i.tipoIncidencia.id_tipo_incidencia = ?1")
-    public List<Incidencia> listaPorTipoIncidencia(int idTipoIncidencia);
+    public List<Incidencia> listaPorTipoIncidencia(int id_tipo_incidencia);
 
     @Query("select i from Incidencia i where i.estado.id_estado = ?1")
-    public List<Incidencia> listaPorEstado(int idEstado);
+    public List<Incidencia> listaPorEstado(int id_estado);
 
     @Query("select i from Incidencia i where i.estado.id_estado = 1")
     public abstract List<Incidencia> listaIncidenciasActivas();

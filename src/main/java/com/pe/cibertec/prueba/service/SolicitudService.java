@@ -12,11 +12,11 @@ public abstract List<Solicitud> listaTodos();
     
     public abstract Optional<Solicitud> buscaSolicitud(int idSolicitud);
     
-    public abstract List<Solicitud> listaPorVehiculo(int idVehiculo);
+    public abstract List<Solicitud> listaPorVehiculo(int id_vehiculo);
     
     public abstract List<Solicitud> listaPorPlacaVehiculoLike(String filtro);
     
-    public abstract List<Solicitud> listaPorEstado(int idEstado);
+    public abstract List<Solicitud> listaPorEstado(int id_estado);
     
     public abstract List<Solicitud> listaSolicitudesActivas();
 

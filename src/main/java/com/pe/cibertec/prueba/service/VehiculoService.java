@@ -10,7 +10,7 @@ public interface VehiculoService {
 	    
 	    public abstract Vehiculo insertaActualizaVehiculo(Vehiculo obj);
 	    
-	    public abstract Optional<Vehiculo> buscaVehiculo(int idVehiculo);
+	    public abstract Optional<Vehiculo> buscaVehiculo(int id_vehiculo);
 	    
 	    public abstract List<Vehiculo> listaPorPlaca(String placa);
 	    

@@ -10,7 +10,7 @@ import com.pe.cibertec.prueba.entity.SolicitudEspecial;
 public interface SolicitudEspecialRepository extends JpaRepository<SolicitudEspecial, Integer> {
 
     @Query("select se from SolicitudEspecial se where se.estado.id_estado = ?1")
-    public List<SolicitudEspecial> listaPorEstado(int idEstado);
+    public List<SolicitudEspecial> listaPorEstado(int id_estado);
 
     @Query("select se from SolicitudEspecial se where se.estado.id_estado = 1")
     public abstract List<SolicitudEspecial> listaSolicitudesEspecialesActivas();

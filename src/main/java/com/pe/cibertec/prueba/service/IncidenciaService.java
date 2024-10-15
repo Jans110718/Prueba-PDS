@@ -12,13 +12,13 @@ public interface IncidenciaService {
 
     public abstract Optional<Incidencia> buscaIncidencia(int idIncidencia);
 
-    public abstract List<Incidencia> listaPorVehiculo(int idVehiculo);
+    public abstract List<Incidencia> listaPorVehiculo(int id_vehiculo);
 
     public abstract List<Incidencia> listaPorPlacaVehiculoLike(String filtro);
 
-    public abstract List<Incidencia> listaPorTipoIncidencia(int idTipoIncidencia);
+    public abstract List<Incidencia> listaPorTipoIncidencia(int id_tipo_incidencia);
 
-    public abstract List<Incidencia> listaPorEstado(int idEstado);
+    public abstract List<Incidencia> listaPorEstado(int id_estado);
 
     public abstract List<Incidencia> listaIncidenciasActivas();
 
